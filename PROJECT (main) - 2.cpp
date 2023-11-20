@@ -2,7 +2,7 @@
 #include <iomanip>  // Include the <iomanip> library for setw
 using namespace std;
 
-const int maxStudent = 3;  //declare constant variable
+const int maxStudent = 50;  //declare constant variable
 
 //declare arrays
 int studentID[maxStudent];
