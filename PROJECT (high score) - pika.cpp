@@ -4,7 +4,7 @@ using namespace std;
 int main ()
 {
 	//declaration constant value
-	const int maxStudent = 50;
+	const int maxStudent = 3;
 	
 	//declaration of arrays
 	int studentID [maxStudent] = {0};
@@ -42,7 +42,7 @@ int main ()
 	 
 	 for (i = 1; i < maxStudent; i++)
 	 {
-	 	if (scores[i] > scores[highest_score_index])
+	 	if (scores[i] >= scores[highest_score_index])
         {
             highest_score_index = i;
         }
