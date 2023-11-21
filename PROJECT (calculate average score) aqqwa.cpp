@@ -3,31 +3,29 @@ Filename:calculate average score.cpp
 Programmer:Aqqwa
 Matrix programmer:AM2307013932
 Programmer description:calculate the average score of 50 students
-date:15/11/2023
+date:20/11/2023
 */
 
-#include <iostream> // Include the iostream library for input/output operations
-using namespace std; // Use the standard namespace
+const int maxStudent = 3;  //declare constant variable
 
-const int maximum = 50; // Define a constant for the maximum number of students
-int studentID[maximum]; // Array to store student IDs
-string studentNAME[maximum]; // Array to store student names
-double scores[maximum]; // Array to store student scores
-int overallStudent = 0; // Variable to keep track of the total number of students
-double averageofStudent = 0.0; // Variable to store the average score of students
+//declare arrays
+int studentID[maxStudent];
+string studentName[maxStudent];
+double scores[maxStudent];
+int attendance[maxStudent];
 
-// Function to calculate the average score of students
-double calculateStudentAverageScores()
+//function to calculate average scores
+int main()
 {
-    double sum = 0.0; // Variable to store the sum of scores
-    for(int i = 0; i < overallStudent; i++) // Loop through each student
+	double sum = 0;  //declaration variables
+    for(int i = 0; i < maxStudent; i++) 
     {
-        sum += scores[i]; // Add the score of the current student to the sum
+        sum += scores[i];
     }
-    if(overallStudent > 0) // Check if the number of students is greater than 0
-    {
-       averageofStudents = sum / overallStudent; // Calculate the average score
-    }
-    cout << "Average score of students: " << averageofStudents << endl; // Print the average score
-    return averageofStudents; // Return the average score
+    
+    double average = sum / maxStudent;  //calculate average
+    cout << "\nThe total scores is: " << sum << "\n"; //output
+	cout << "The average score is: " << average << "\n" << endl; //output
+    
+    return 0;
 }
